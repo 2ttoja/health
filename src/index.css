@@ -43,4 +43,56 @@
   .input-unit {
     @apply text-[10px] text-slate-400 font-semibold;
   }
+
+  .no-print {
+    @apply flex; /* Default display */
+  }
+}
+
+@media print {
+  body {
+    background-color: white !important;
+    color: black !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+  
+  .no-print {
+    display: none !important;
+  }
+
+  .h-screen {
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  main {
+    display: block !important;
+    overflow: visible !important;
+  }
+
+  section {
+    width: 100% !important;
+    overflow: visible !important;
+    display: block !important;
+  }
+
+  .card-container {
+    border: 1px solid #eee !important;
+    box-shadow: none !important;
+    margin-bottom: 20px !important;
+    overflow: visible !important;
+  }
+
+  .flex-1 {
+    flex: none !important;
+  }
+
+  .overflow-hidden {
+    overflow: visible !important;
+  }
+
+  .overflow-y-auto {
+    overflow: visible !important;
+  }
 }
