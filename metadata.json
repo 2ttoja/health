@@ -1,0 +1,6 @@
+{
+  "name": "오늘의 건강관리 코치",
+  "description": "아이폰 건강 앱 캡처 화면이나 데이터를 입력하면 인공지능이 오늘의 건강 상태를 분석하고 맞춤형 조언을 제공합니다.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
